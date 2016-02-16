@@ -1,0 +1,21 @@
+{
+  "name": "ng-pendo",
+  "main": "ng-pendo.js",
+  "homepage": "https://github.com/pendo-io/ng-pendo",
+  "authors": [
+    "Michael Dellanoce <mdellanoce@pendo.io>"
+  ],
+  "description": "Pendo.io AngularJS module",
+  "moduleType": [],
+  "keywords": [
+    "Pendo"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
