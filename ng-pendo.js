@@ -19,7 +19,7 @@
             return;
         }
 
-        if(window.hasOwnProperty('pendo') && window.pendo.initialize) {
+        if(window.pendo && window.pendo.initialize) {
             registerFn(pendo);
         } else {
             setTimeout(waitFn, delay);
