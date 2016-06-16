@@ -115,9 +115,11 @@
         };
 
     }).run(['$rootScope', '$pendolytics', function($rootScope, $pendolytics) {
-        if (!$pendolytics.doNotAutoStart) {
+        // check if the scripts are loaded first, otherwise fall back to auto starting
+        if ( !window.pendo && !window.analytics && !$pendolytics.doNotAutoStart) {
             $pendolytics.bootstrap();
         }
+        
         ap.waitForPendo( 500, function( p ) {
             $pendolytics.load();
             $rootScope.$on('$locationChangeSuccess', function() {
