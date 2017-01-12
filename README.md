@@ -22,7 +22,7 @@ window.pendo_options = {
 Include `$pendolytics` in your AngularJS modules:
 
 ```javascript
-angular.module('your-app', [...,'pendolytics',...]);
+angular.module('your-app', [...,'$pendolytics',...]);
 ```
 
 When you have access to the visitor information use it to identify the visitor:
