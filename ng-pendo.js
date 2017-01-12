@@ -1,7 +1,7 @@
 /*
 *       pendo.io Angular Module
 *
-*       (c) 2013 pendo.io 
+*       (c) 2017 pendo.io
 */
 
 
@@ -116,7 +116,10 @@
 
     }).run(['$rootScope', '$pendolytics', function($rootScope, $pendolytics) {
         // check if the scripts are loaded first, otherwise fall back to auto starting
-        if ( !window.pendo && !window.analytics && !$pendolytics.doNotAutoStart) {
+        if (!window.pendo &&
+            !(window.analytics && window.analytics.Integrations && window.analytics.Integrations["Segment.io"]) &&
+            !$pendolytics.doNotAutoStart) {
+
             $pendolytics.bootstrap();
         }
         

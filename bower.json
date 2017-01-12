@@ -3,7 +3,7 @@
   "main": "ng-pendo.js",
   "homepage": "https://github.com/pendo-io/ng-pendo",
   "authors": [
-    "Michael Dellanoce <mdellanoce@pendo.io>"
+    "pendo.io <admin@pendo.io>"
   ],
   "description": "Pendo.io AngularJS module",
   "moduleType": [],
