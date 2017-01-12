@@ -1,5 +1,7 @@
 # ng-pendo v1.1.0
 
+Please note that the most recent installation snippet (found in your [install settings](https://app.pendo.io/admin/settings)) makes this integration unnecessary, but it is fine to continue using it.
+
 ### Pendo.io AngularJS module
 
 ## Installation
