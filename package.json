@@ -1,0 +1,22 @@
+{
+  "name": "ng-pendo",
+  "version": "1.0.3",
+  "description": "Pendo.io AngularJS module",
+  "main": "ng-pendo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katsos/ng-pendo.git"
+  },
+  "keywords": [
+    "Pendo"
+  ],
+  "author": "Michael Dellanoce <mdellanoce@pendo.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/katsos/ng-pendo/issues"
+  },
+  "homepage": "https://github.com/katsos/ng-pendo#readme"
+}
