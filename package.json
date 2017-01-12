@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/katsos/ng-pendo.git"
+    "url": "git+https://github.com/pendo-io/ng-pendo.git"
   },
   "keywords": [
     "Pendo"
   ],
-  "author": "Michael Dellanoce <mdellanoce@pendo.io>",
+  "author": "pendo.io <admin@pendo.io>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/katsos/ng-pendo/issues"
+    "url": "https://github.com/pendo-io/ng-pendo/issues"
   },
-  "homepage": "https://github.com/katsos/ng-pendo#readme"
+  "homepage": "https://github.com/pendo-io/ng-pendo#readme"
 }
