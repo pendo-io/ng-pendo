@@ -31,6 +31,7 @@
 
         var eventCache = [];
         var service = {};
+        var initializeOptions;
 
         var serviceImpl = {
             pageLoad: function() { 
@@ -61,8 +62,6 @@
         };
 
         service.load = function() {
-            pendo.log("PENDO LOADED!!!");
-
             serviceImpl = pendo;
 
             // Flush the cache
@@ -81,6 +80,7 @@
         };
 
         service.initialize = function(options){
+            initializeOptions = options;
             serviceImpl.initialize(options);
         };
 
@@ -100,7 +100,7 @@
                 var script = document.createElement('script');
                 script.type = 'text/javascript';
                 script.async = true;
-                script.src = ('http:' === document.location.protocol ? 'http://' : 'https://' ) + 'd3accju1t3mngt.cloudfront.net/js/pa.min.js';
+                script.src = agentLocation();
                 var firstScript = document.getElementsByTagName('script')[0];
                 firstScript.parentNode.insertBefore(script, firstScript);
                 service.bootstrapped = true;
@@ -114,6 +114,20 @@
             }
         };
 
+        function agentLocation () {
+            var key = apiKey();
+            var protocol = (document.location.protocol === 'http:' ? 'http://' : 'https://');
+            return protocol + 'cdn.pendo.io/' + (key ? 'agent/static/' + key + '/pendo.js' : 'js/pa.min.js');
+        }
+
+        function apiKey () {
+            if (window.pendo_options && window.pendo_options.apiKey) {
+                return window.pendo_options.apiKey;
+            }
+            if (initializeOptions && initializeOptions.apiKey) {
+                return initializeOptions.apiKey;
+            }
+        }
     }).run(['$rootScope', '$pendolytics', function($rootScope, $pendolytics) {
         // check if the scripts are loaded first, otherwise fall back to auto starting
         if (!window.pendo &&

@@ -1,4 +1,4 @@
-# ng-pendo v1.0.4 
+# ng-pendo v1.1.0
 
 ### Pendo.io AngularJS module
 
