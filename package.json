@@ -3,20 +3,18 @@
   "version": "1.1.0",
   "description": "Pendo.io AngularJS module",
   "main": "ng-pendo.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pendo-io/ng-pendo.git"
   },
   "keywords": [
-    "Pendo"
+    "Pendo", "Pendolytics", "Analytics"
   ],
   "author": "pendo.io <admin@pendo.io>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/pendo-io/ng-pendo/issues"
   },
-  "homepage": "https://github.com/pendo-io/ng-pendo#readme"
+  "homepage": "https://github.com/pendo-io/ng-pendo#readme",
+  "dependencies": { "angular" : "^1.3" }
 }
